@@ -413,7 +413,7 @@ function compartilharTimes() {
         
         textoCompartilhamento += `👥 TIME ${i + 1} (Pontuação: ${pontuacaoTotal}) 👥\n`;
         time.forEach(jogador => {
-            textoCompartilhamento += `• ${jogador.name} (${jogador.score}) - ${jogador.genre === 'F' ? 'F' : 'M'}\n`;
+            textoCompartilhamento += `• ${jogador.name} - ${jogador.genre === 'F' ? 'F' : 'M'}\n`;
         });
         textoCompartilhamento += "\n";
     });
