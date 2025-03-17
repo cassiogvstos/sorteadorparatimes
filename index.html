@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="sorteadordetimes/src/css/style.css">
+    <title>Sorteador de Times</title>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Sorteador de Times</h2>
+        <h3>Adicionar Jogadores</h3>
+        <textarea id="listaJogadores" placeholder="Cole aqui os nomes dos jogadores, separados por vírgula..."></textarea>
+        <section id="bt">
+            <button class="addList" onclick="adicionarListaJogadores()">Adicionar Lista</button>
+            <button class="addjogador" onclick="adicionarJogador()">Adicionar Jogador</button>
+        </section>
+        <div id="jogadoresContainer"></div>
+        <section>
+            <label for="numTimes">Quantidade de Times:</label>
+            <input type="number" id="numTimes" min="2" value="2">
+            <label for="jogadoresPorTime">Jogadores por Time:</label>
+            <input type="number" id="jogadoresPorTime" min="1" value="3">
+        </section>
+            <button class="sort" onclick="sortearTimes()">Sortear Times</button>
+            <button class="delete" onclick="limparTimes()">Limpar Times</button>
+
+        <div id="result"></div>
+    </div>
+
+<script type="text/javascript" src="sorteadordetimes/src/scripts/sorteio.js"></script>   
+</body>
+<footer>
+    Desenvolvido por: <a href="#" target="_blank" rel="noopener noreferrer">Cássio Santos &nbsp; - &nbsp;</a>
+    
+    <span><a href="https://github.com/cassiogvstos"><i class="fi fi-brands-github">Github</i></a>&nbsp; - &nbsp;</span>
+    <span><a href="https://www.linkedin.com/in/cássio-santos/"><i class="fi fi-brands-linkedin">Linkedin</i></a></span>
+    
+</footer>
+</html>
